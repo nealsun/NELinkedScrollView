@@ -1,0 +1,460 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		062A3E4A19EBA6F000F68F37 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 062A3E4919EBA6F000F68F37 /* main.m */; };
+		062A3E4D19EBA6F000F68F37 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 062A3E4C19EBA6F000F68F37 /* AppDelegate.m */; };
+		062A3E5319EBA6F000F68F37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 062A3E5119EBA6F000F68F37 /* Main.storyboard */; };
+		062A3E5519EBA6F000F68F37 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 062A3E5419EBA6F000F68F37 /* Images.xcassets */; };
+		062A3E5819EBA6F000F68F37 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 062A3E5619EBA6F000F68F37 /* LaunchScreen.xib */; };
+		062A3E6419EBA6F000F68F37 /* NELinkedScrollViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 062A3E6319EBA6F000F68F37 /* NELinkedScrollViewDemoTests.m */; };
+		062A3E7419EBA9CD00F68F37 /* NELinkedScrollCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 062A3E6F19EBA9CD00F68F37 /* NELinkedScrollCell.m */; };
+		062A3E7519EBA9CD00F68F37 /* NELinkedScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 062A3E7119EBA9CD00F68F37 /* NELinkedScrollView.m */; };
+		062A3E7619EBA9CD00F68F37 /* NELinkedScrollViewAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 062A3E7319EBA9CD00F68F37 /* NELinkedScrollViewAnimator.m */; };
+		062A3E7919EBA9F200F68F37 /* NEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 062A3E7819EBA9F200F68F37 /* NEViewController.m */; };
+		062A3E7C19EBAF4900F68F37 /* NEDemoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 062A3E7B19EBAF4900F68F37 /* NEDemoCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		062A3E5E19EBA6F000F68F37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 062A3E3C19EBA6F000F68F37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 062A3E4319EBA6F000F68F37;
+			remoteInfo = NELinkedScrollViewDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		062A3E4419EBA6F000F68F37 /* NELinkedScrollViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NELinkedScrollViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		062A3E4819EBA6F000F68F37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		062A3E4919EBA6F000F68F37 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		062A3E4B19EBA6F000F68F37 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		062A3E4C19EBA6F000F68F37 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		062A3E5219EBA6F000F68F37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		062A3E5419EBA6F000F68F37 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		062A3E5719EBA6F000F68F37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		062A3E5D19EBA6F000F68F37 /* NELinkedScrollViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NELinkedScrollViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		062A3E6219EBA6F000F68F37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		062A3E6319EBA6F000F68F37 /* NELinkedScrollViewDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NELinkedScrollViewDemoTests.m; sourceTree = "<group>"; };
+		062A3E6E19EBA9CD00F68F37 /* NELinkedScrollCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NELinkedScrollCell.h; sourceTree = "<group>"; };
+		062A3E6F19EBA9CD00F68F37 /* NELinkedScrollCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NELinkedScrollCell.m; sourceTree = "<group>"; };
+		062A3E7019EBA9CD00F68F37 /* NELinkedScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NELinkedScrollView.h; sourceTree = "<group>"; };
+		062A3E7119EBA9CD00F68F37 /* NELinkedScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NELinkedScrollView.m; sourceTree = "<group>"; };
+		062A3E7219EBA9CD00F68F37 /* NELinkedScrollViewAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NELinkedScrollViewAnimator.h; sourceTree = "<group>"; };
+		062A3E7319EBA9CD00F68F37 /* NELinkedScrollViewAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NELinkedScrollViewAnimator.m; sourceTree = "<group>"; };
+		062A3E7719EBA9F200F68F37 /* NEViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEViewController.h; sourceTree = "<group>"; };
+		062A3E7819EBA9F200F68F37 /* NEViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEViewController.m; sourceTree = "<group>"; };
+		062A3E7A19EBAF4900F68F37 /* NEDemoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEDemoCell.h; sourceTree = "<group>"; };
+		062A3E7B19EBAF4900F68F37 /* NEDemoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEDemoCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		062A3E4119EBA6F000F68F37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		062A3E5A19EBA6F000F68F37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		062A3E3B19EBA6F000F68F37 = {
+			isa = PBXGroup;
+			children = (
+				062A3E6D19EBA9CD00F68F37 /* NELinkedScrollView */,
+				062A3E4619EBA6F000F68F37 /* NELinkedScrollViewDemo */,
+				062A3E6019EBA6F000F68F37 /* NELinkedScrollViewDemoTests */,
+				062A3E4519EBA6F000F68F37 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		062A3E4519EBA6F000F68F37 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				062A3E4419EBA6F000F68F37 /* NELinkedScrollViewDemo.app */,
+				062A3E5D19EBA6F000F68F37 /* NELinkedScrollViewDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		062A3E4619EBA6F000F68F37 /* NELinkedScrollViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				062A3E4B19EBA6F000F68F37 /* AppDelegate.h */,
+				062A3E4C19EBA6F000F68F37 /* AppDelegate.m */,
+				062A3E7719EBA9F200F68F37 /* NEViewController.h */,
+				062A3E7819EBA9F200F68F37 /* NEViewController.m */,
+				062A3E7A19EBAF4900F68F37 /* NEDemoCell.h */,
+				062A3E7B19EBAF4900F68F37 /* NEDemoCell.m */,
+				062A3E5119EBA6F000F68F37 /* Main.storyboard */,
+				062A3E5419EBA6F000F68F37 /* Images.xcassets */,
+				062A3E5619EBA6F000F68F37 /* LaunchScreen.xib */,
+				062A3E4719EBA6F000F68F37 /* Supporting Files */,
+			);
+			path = NELinkedScrollViewDemo;
+			sourceTree = "<group>";
+		};
+		062A3E4719EBA6F000F68F37 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				062A3E4819EBA6F000F68F37 /* Info.plist */,
+				062A3E4919EBA6F000F68F37 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		062A3E6019EBA6F000F68F37 /* NELinkedScrollViewDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				062A3E6319EBA6F000F68F37 /* NELinkedScrollViewDemoTests.m */,
+				062A3E6119EBA6F000F68F37 /* Supporting Files */,
+			);
+			path = NELinkedScrollViewDemoTests;
+			sourceTree = "<group>";
+		};
+		062A3E6119EBA6F000F68F37 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				062A3E6219EBA6F000F68F37 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		062A3E6D19EBA9CD00F68F37 /* NELinkedScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				062A3E6E19EBA9CD00F68F37 /* NELinkedScrollCell.h */,
+				062A3E6F19EBA9CD00F68F37 /* NELinkedScrollCell.m */,
+				062A3E7019EBA9CD00F68F37 /* NELinkedScrollView.h */,
+				062A3E7119EBA9CD00F68F37 /* NELinkedScrollView.m */,
+				062A3E7219EBA9CD00F68F37 /* NELinkedScrollViewAnimator.h */,
+				062A3E7319EBA9CD00F68F37 /* NELinkedScrollViewAnimator.m */,
+			);
+			path = NELinkedScrollView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		062A3E4319EBA6F000F68F37 /* NELinkedScrollViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 062A3E6719EBA6F000F68F37 /* Build configuration list for PBXNativeTarget "NELinkedScrollViewDemo" */;
+			buildPhases = (
+				062A3E4019EBA6F000F68F37 /* Sources */,
+				062A3E4119EBA6F000F68F37 /* Frameworks */,
+				062A3E4219EBA6F000F68F37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NELinkedScrollViewDemo;
+			productName = NELinkedScrollViewDemo;
+			productReference = 062A3E4419EBA6F000F68F37 /* NELinkedScrollViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		062A3E5C19EBA6F000F68F37 /* NELinkedScrollViewDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 062A3E6A19EBA6F000F68F37 /* Build configuration list for PBXNativeTarget "NELinkedScrollViewDemoTests" */;
+			buildPhases = (
+				062A3E5919EBA6F000F68F37 /* Sources */,
+				062A3E5A19EBA6F000F68F37 /* Frameworks */,
+				062A3E5B19EBA6F000F68F37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				062A3E5F19EBA6F000F68F37 /* PBXTargetDependency */,
+			);
+			name = NELinkedScrollViewDemoTests;
+			productName = NELinkedScrollViewDemoTests;
+			productReference = 062A3E5D19EBA6F000F68F37 /* NELinkedScrollViewDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		062A3E3C19EBA6F000F68F37 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = NE;
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = orz;
+				TargetAttributes = {
+					062A3E4319EBA6F000F68F37 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					062A3E5C19EBA6F000F68F37 = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = 062A3E4319EBA6F000F68F37;
+					};
+				};
+			};
+			buildConfigurationList = 062A3E3F19EBA6F000F68F37 /* Build configuration list for PBXProject "NELinkedScrollViewDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 062A3E3B19EBA6F000F68F37;
+			productRefGroup = 062A3E4519EBA6F000F68F37 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				062A3E4319EBA6F000F68F37 /* NELinkedScrollViewDemo */,
+				062A3E5C19EBA6F000F68F37 /* NELinkedScrollViewDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		062A3E4219EBA6F000F68F37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				062A3E5319EBA6F000F68F37 /* Main.storyboard in Resources */,
+				062A3E5819EBA6F000F68F37 /* LaunchScreen.xib in Resources */,
+				062A3E5519EBA6F000F68F37 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		062A3E5B19EBA6F000F68F37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		062A3E4019EBA6F000F68F37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				062A3E4D19EBA6F000F68F37 /* AppDelegate.m in Sources */,
+				062A3E7419EBA9CD00F68F37 /* NELinkedScrollCell.m in Sources */,
+				062A3E4A19EBA6F000F68F37 /* main.m in Sources */,
+				062A3E7919EBA9F200F68F37 /* NEViewController.m in Sources */,
+				062A3E7519EBA9CD00F68F37 /* NELinkedScrollView.m in Sources */,
+				062A3E7619EBA9CD00F68F37 /* NELinkedScrollViewAnimator.m in Sources */,
+				062A3E7C19EBAF4900F68F37 /* NEDemoCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		062A3E5919EBA6F000F68F37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				062A3E6419EBA6F000F68F37 /* NELinkedScrollViewDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		062A3E5F19EBA6F000F68F37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 062A3E4319EBA6F000F68F37 /* NELinkedScrollViewDemo */;
+			targetProxy = 062A3E5E19EBA6F000F68F37 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		062A3E5119EBA6F000F68F37 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				062A3E5219EBA6F000F68F37 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		062A3E5619EBA6F000F68F37 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				062A3E5719EBA6F000F68F37 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		062A3E6519EBA6F000F68F37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		062A3E6619EBA6F000F68F37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		062A3E6819EBA6F000F68F37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = NELinkedScrollViewDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		062A3E6919EBA6F000F68F37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = NELinkedScrollViewDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		062A3E6B19EBA6F000F68F37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NELinkedScrollViewDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NELinkedScrollViewDemo.app/NELinkedScrollViewDemo";
+			};
+			name = Debug;
+		};
+		062A3E6C19EBA6F000F68F37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NELinkedScrollViewDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NELinkedScrollViewDemo.app/NELinkedScrollViewDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		062A3E3F19EBA6F000F68F37 /* Build configuration list for PBXProject "NELinkedScrollViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				062A3E6519EBA6F000F68F37 /* Debug */,
+				062A3E6619EBA6F000F68F37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		062A3E6719EBA6F000F68F37 /* Build configuration list for PBXNativeTarget "NELinkedScrollViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				062A3E6819EBA6F000F68F37 /* Debug */,
+				062A3E6919EBA6F000F68F37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		062A3E6A19EBA6F000F68F37 /* Build configuration list for PBXNativeTarget "NELinkedScrollViewDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				062A3E6B19EBA6F000F68F37 /* Debug */,
+				062A3E6C19EBA6F000F68F37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 062A3E3C19EBA6F000F68F37 /* Project object */;
+}
