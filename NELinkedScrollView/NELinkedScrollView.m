@@ -26,7 +26,7 @@
     NSInteger _directon; // 0中间 1next -1previous
     BOOL _innerAnimation;  //表示cell在切换
     BOOL _outterAnimation; //表示正在外层切换
-                           //    BOOL    _forward;           //向前还是向后翻页 yes向前 no向后；
+//    BOOL    _forward;           //向前还是向后翻页 yes向前 no向后；
     CGPoint _currentOffset;
     CGPoint _forwardOffset;
     
@@ -94,6 +94,12 @@
     return self;
 }
 
+- (void)layoutSubviews {
+    self.containerScrollView.frame  = self.bounds;
+    _containerScrollView.contentSize =
+    CGSizeMake(3 * self.frame.size.width, self.frame.size.height);
+    _containerScrollView.contentOffset = CGPointMake(self.frame.size.width, 0);
+}
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
@@ -165,7 +171,7 @@
                             currentCell:self.currentCell
                      willTurnFromOffset:currentOffset
                                toOffset:CGPointMake(currentOffset.x +
-                                                        self.currentCell.bounds.size.width * PLUS_SCALE_RATIO,
+                                                        self.currentCell.bounds.size.width,
                                                     0)];
     }
 
@@ -180,7 +186,7 @@
                       didTurnFromOffset:currentOffset
                                toOffset:CGPointMake(currentOffset.x +
                                                         self.currentCell.bounds
-                                                            .size.width * PLUS_SCALE_RATIO,
+                                                            .size.width,
                                                     0)];
     }
 }
@@ -208,7 +214,7 @@
                 willTurnFromOffset:self.currentCell.scrollView.contentOffset
                           toOffset:CGPointMake(
                                        currentOffset.x +
-                                           self.currentCell.bounds.size.width * PLUS_SCALE_RATIO,
+                                           self.currentCell.bounds.size.width,
                                        0)];
         }
 
@@ -221,7 +227,7 @@
                                   self.currentCell.frame.size.height)
                      toBounds:CGRectMake(
                                   self.currentCell.scrollView.contentOffset.x +
-                                      self.currentCell.frame.size.width * PLUS_SCALE_RATIO,
+                                      self.currentCell.frame.size.width,
                                   0, self.currentCell.frame.size.width,
                                   self.currentCell.frame.size.height)
                         delta:0
@@ -229,11 +235,11 @@
             _innerAnimation = YES;
             _currentOffset = self.currentCell.scrollView.contentOffset;
             _forwardOffset = CGPointMake(
-                currentOffset.x + self.currentCell.bounds.size.width * PLUS_SCALE_RATIO, 0);
+                currentOffset.x + self.currentCell.bounds.size.width, 0);
             [self.currentCell.scrollView
                 setContentOffset:CGPointMake(
                                      currentOffset.x +
-                                         self.currentCell.bounds.size.width * PLUS_SCALE_RATIO,
+                                         self.currentCell.bounds.size.width,
                                      0)
                         animated:NO];
         } else {
@@ -241,7 +247,7 @@
             [self.currentCell.scrollView
                 setContentOffset:CGPointMake(
                                      currentOffset.x +
-                                         self.currentCell.bounds.size.width * PLUS_SCALE_RATIO,
+                                         self.currentCell.bounds.size.width,
                                      0)
                         animated:NO];
             if ([self.delegate
@@ -255,7 +261,7 @@
                     didTurnFromOffset:currentOffset
                              toOffset:CGPointMake(currentOffset.x +
                                                       self.currentCell.bounds
-                                                          .size.width * PLUS_SCALE_RATIO,
+                                                          .size.width,
                                                   0)];
             }
         }
@@ -378,7 +384,7 @@
                 willTurnFromOffset:cell.scrollView.contentOffset
                           toOffset:CGPointMake(
                                        currentOffset.x -
-                                           self.currentCell.bounds.size.width * PLUS_SCALE_RATIO,
+                                           self.currentCell.bounds.size.width,
                                        0)];
         }
         if (animated) {
@@ -387,7 +393,7 @@
                                            cell.frame.size.width,
                                            cell.frame.size.height)
                        toBounds:CGRectMake(cell.scrollView.contentOffset.x -
-                                               cell.frame.size.width * PLUS_SCALE_RATIO,
+                                               cell.frame.size.width,
                                            0, cell.frame.size.width,
                                            cell.frame.size.height)
                           delta:0
@@ -395,10 +401,10 @@
             _innerAnimation = YES;
             _currentOffset = cell.scrollView.contentOffset;
             _forwardOffset = CGPointMake(
-                currentOffset.x - self.currentCell.bounds.size.width * PLUS_SCALE_RATIO, 0);
+                currentOffset.x - self.currentCell.bounds.size.width, 0);
             [cell.scrollView
                 setContentOffset:CGPointMake(currentOffset.x -
-                                                 cell.bounds.size.width * PLUS_SCALE_RATIO,
+                                                 cell.bounds.size.width,
                                              0)
                         animated:NO];
         } else {
@@ -406,7 +412,7 @@
             [self.currentCell.scrollView
                 setContentOffset:CGPointMake(
                                      currentOffset.x -
-                                         self.currentCell.bounds.size.width * PLUS_SCALE_RATIO,
+                                         self.currentCell.bounds.size.width,
                                      0)
                         animated:NO];
             if ([self.delegate
@@ -420,7 +426,7 @@
                     didTurnFromOffset:currentOffset
                              toOffset:CGPointMake(currentOffset.x -
                                                       self.currentCell.bounds
-                                                          .size.width * PLUS_SCALE_RATIO,
+                                                          .size.width,
                                                   0)];
             }
         }
@@ -657,22 +663,10 @@
 
     animation.timingFunction = timing;
     animation.removedOnCompletion = YES;
-    if (scrollView != self.containerScrollView) {
-        from.size.width  *= PLUS_SCALE_RATIO;
-        from.size.height *= PLUS_SCALE_RATIO;
-        to.size.height *= PLUS_SCALE_RATIO;
-        to.size.width *= PLUS_SCALE_RATIO;
-    }
     
     animation.fromValue = [NSValue valueWithCGRect:from];
     animation.toValue = [NSValue valueWithCGRect:to];
     [scrollView.layer addAnimation:animation forKey:key];
-}
-
-- (void)layoutSubviews {
-    [super layoutSubviews];
-
-    //    [self recenterIfNecessary];
 }
 
 //// recenter content periodically
@@ -701,7 +695,7 @@
         self.interimCell.frame = frame;
         [self cellExchange];
     }else {
-        DLog(@"container view not recenter");
+        NSLog(@"container view not recenter");
     }
 }
 
@@ -921,16 +915,6 @@
     UIScrollView *cellScrollView = cell.scrollView;
     CGPoint contentOffset = cellScrollView.contentOffset;
     _cellLastOffset.x = contentOffset.x;
-//    BOOL reverse = NO;
-//    NSInteger directionForNow = 0;
-//    if (contentOffset.x > _cellInitOffset.x) {
-//        directionForNow = 1;
-//    } else if (contentOffset.x < _cellInitOffset.x) {
-//        directionForNow = -1;
-//    }
-//    
-//    reverse = (directionForNow != _directon && directionForNow != 0 ? YES : NO);
-//    _directon = directionForNow;
     
     if ([self.delegate respondsToSelector:@selector(linkedScrollView:
                                                     currentCell:
@@ -943,7 +927,7 @@
              currentCell:self.currentCell
              willTurnFromOffset:_cellInitOffset
              toOffset:CGPointMake(_cellInitOffset.x +
-                                  cell.bounds.size.width * PLUS_SCALE_RATIO,
+                                  cell.bounds.size.width,
                                   _cellInitOffset.y)];
         } else {
             [self.delegate
@@ -951,7 +935,7 @@
              currentCell:self.currentCell
              willTurnFromOffset:_cellInitOffset
              toOffset:CGPointMake(_cellInitOffset.x -
-                                  cell.bounds.size.width * PLUS_SCALE_RATIO,
+                                  cell.bounds.size.width,
                                   _cellInitOffset.y)];
         }
     }
@@ -980,35 +964,32 @@
 - (CGPoint)scrollingViewDidEndScrolling:(NELinkedScrollCell *)cell withVelocity:(CGPoint)velocity{
     UIScrollView *cellScrollView = cell.scrollView;
     CGPoint contentOffset = cellScrollView.contentOffset;
-    if ((int)_cellInitOffset.x % (int)(cell.bounds.size.width * PLUS_SCALE_RATIO) != 0) {
+    if ((int)_cellInitOffset.x % (int)(cell.bounds.size.width) != 0) {
         //校准
         if (contentOffset.x > _cellInitOffset.x) {
             _cellInitOffset.x =
-                ((int)(_cellInitOffset.x / (cell.bounds.size.width * PLUS_SCALE_RATIO))) *
-                cell.bounds.size.width * PLUS_SCALE_RATIO;
+                ((int)(_cellInitOffset.x / (cell.bounds.size.width))) *
+                cell.bounds.size.width;
         } else {
             _cellInitOffset.x =
-                ((int)(_cellInitOffset.x / (cell.bounds.size.width * PLUS_SCALE_RATIO)) + 1) *
-                cell.bounds.size.width * PLUS_SCALE_RATIO;
+                ((int)(_cellInitOffset.x / (cell.bounds.size.width)) + 1) *
+                cell.bounds.size.width;
         }
     }
 
     CGFloat deltaOffset = contentOffset.x - _cellInitOffset.x;
     //    BOOL backToInit = NO;
     CGPoint targetOffset = _cellInitOffset;
-//    if (fabsf(deltaOffset) < (40 * PLUS_SCALE_RATIO) && velocity.x == 0) {
-//        targetOffset = CGPointMake(_cellInitOffset.x, 0);
-//        _canceled = YES;
-//    } else
+
     if (_canceled) {
         
     } else {
         if (deltaOffset > 0) {
             targetOffset =
-            CGPointMake(_cellInitOffset.x + cell.bounds.size.width * PLUS_SCALE_RATIO, 0);
+            CGPointMake(_cellInitOffset.x + cell.bounds.size.width, 0);
         } else if (deltaOffset < 0) {
             targetOffset =
-            CGPointMake(_cellInitOffset.x - cell.bounds.size.width * PLUS_SCALE_RATIO, 0);
+            CGPointMake(_cellInitOffset.x - cell.bounds.size.width, 0);
         }
     }
     

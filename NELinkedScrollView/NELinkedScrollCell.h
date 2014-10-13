@@ -12,9 +12,6 @@
 
 @protocol NELinkedScrollDelegate <NSObject>
 
-//问是否还有上一个或下一个cell
-- (BOOL)scrollingViewShouldScrollBack:(NELinkedScrollCell *)cell;
-
 //切换时delegate
 - (void)scrollingViewWillBeginPulling:(NELinkedScrollCell *)cell;
 - (void)scrollingViewDidBeginPulling:(NELinkedScrollCell *)cell;
@@ -50,5 +47,4 @@
 
 - (void)cellWillAddtoLinkedScrollView:(NELinkedScrollView *)linkedScrollView;
 
-//+ (void)exchangeStateFromCell:(NELinkedScrollCell *)fromCell toCell:(NELinkedScrollCell *)toCell forward:(BOOL)forward;
 @end

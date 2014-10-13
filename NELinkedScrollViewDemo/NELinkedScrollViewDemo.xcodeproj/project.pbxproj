@@ -13,11 +13,11 @@
 		062A3E5519EBA6F000F68F37 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 062A3E5419EBA6F000F68F37 /* Images.xcassets */; };
 		062A3E5819EBA6F000F68F37 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 062A3E5619EBA6F000F68F37 /* LaunchScreen.xib */; };
 		062A3E6419EBA6F000F68F37 /* NELinkedScrollViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 062A3E6319EBA6F000F68F37 /* NELinkedScrollViewDemoTests.m */; };
-		062A3E7419EBA9CD00F68F37 /* NELinkedScrollCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 062A3E6F19EBA9CD00F68F37 /* NELinkedScrollCell.m */; };
-		062A3E7519EBA9CD00F68F37 /* NELinkedScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 062A3E7119EBA9CD00F68F37 /* NELinkedScrollView.m */; };
-		062A3E7619EBA9CD00F68F37 /* NELinkedScrollViewAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 062A3E7319EBA9CD00F68F37 /* NELinkedScrollViewAnimator.m */; };
 		062A3E7919EBA9F200F68F37 /* NEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 062A3E7819EBA9F200F68F37 /* NEViewController.m */; };
 		062A3E7C19EBAF4900F68F37 /* NEDemoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 062A3E7B19EBAF4900F68F37 /* NEDemoCell.m */; };
+		062A3E8419EBC56A00F68F37 /* NELinkedScrollCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 062A3E7F19EBC56A00F68F37 /* NELinkedScrollCell.m */; };
+		062A3E8519EBC56A00F68F37 /* NELinkedScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 062A3E8119EBC56A00F68F37 /* NELinkedScrollView.m */; };
+		062A3E8619EBC56A00F68F37 /* NELinkedScrollViewAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 062A3E8319EBC56A00F68F37 /* NELinkedScrollViewAnimator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,16 +42,16 @@
 		062A3E5D19EBA6F000F68F37 /* NELinkedScrollViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NELinkedScrollViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		062A3E6219EBA6F000F68F37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		062A3E6319EBA6F000F68F37 /* NELinkedScrollViewDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NELinkedScrollViewDemoTests.m; sourceTree = "<group>"; };
-		062A3E6E19EBA9CD00F68F37 /* NELinkedScrollCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NELinkedScrollCell.h; sourceTree = "<group>"; };
-		062A3E6F19EBA9CD00F68F37 /* NELinkedScrollCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NELinkedScrollCell.m; sourceTree = "<group>"; };
-		062A3E7019EBA9CD00F68F37 /* NELinkedScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NELinkedScrollView.h; sourceTree = "<group>"; };
-		062A3E7119EBA9CD00F68F37 /* NELinkedScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NELinkedScrollView.m; sourceTree = "<group>"; };
-		062A3E7219EBA9CD00F68F37 /* NELinkedScrollViewAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NELinkedScrollViewAnimator.h; sourceTree = "<group>"; };
-		062A3E7319EBA9CD00F68F37 /* NELinkedScrollViewAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NELinkedScrollViewAnimator.m; sourceTree = "<group>"; };
 		062A3E7719EBA9F200F68F37 /* NEViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEViewController.h; sourceTree = "<group>"; };
 		062A3E7819EBA9F200F68F37 /* NEViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEViewController.m; sourceTree = "<group>"; };
 		062A3E7A19EBAF4900F68F37 /* NEDemoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEDemoCell.h; sourceTree = "<group>"; };
 		062A3E7B19EBAF4900F68F37 /* NEDemoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEDemoCell.m; sourceTree = "<group>"; };
+		062A3E7E19EBC56A00F68F37 /* NELinkedScrollCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NELinkedScrollCell.h; sourceTree = "<group>"; };
+		062A3E7F19EBC56A00F68F37 /* NELinkedScrollCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NELinkedScrollCell.m; sourceTree = "<group>"; };
+		062A3E8019EBC56A00F68F37 /* NELinkedScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NELinkedScrollView.h; sourceTree = "<group>"; };
+		062A3E8119EBC56A00F68F37 /* NELinkedScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NELinkedScrollView.m; sourceTree = "<group>"; };
+		062A3E8219EBC56A00F68F37 /* NELinkedScrollViewAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NELinkedScrollViewAnimator.h; sourceTree = "<group>"; };
+		062A3E8319EBC56A00F68F37 /* NELinkedScrollViewAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NELinkedScrollViewAnimator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +75,7 @@
 		062A3E3B19EBA6F000F68F37 = {
 			isa = PBXGroup;
 			children = (
-				062A3E6D19EBA9CD00F68F37 /* NELinkedScrollView */,
+				062A3E7D19EBC56A00F68F37 /* NELinkedScrollView */,
 				062A3E4619EBA6F000F68F37 /* NELinkedScrollViewDemo */,
 				062A3E6019EBA6F000F68F37 /* NELinkedScrollViewDemoTests */,
 				062A3E4519EBA6F000F68F37 /* Products */,
@@ -134,17 +134,18 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		062A3E6D19EBA9CD00F68F37 /* NELinkedScrollView */ = {
+		062A3E7D19EBC56A00F68F37 /* NELinkedScrollView */ = {
 			isa = PBXGroup;
 			children = (
-				062A3E6E19EBA9CD00F68F37 /* NELinkedScrollCell.h */,
-				062A3E6F19EBA9CD00F68F37 /* NELinkedScrollCell.m */,
-				062A3E7019EBA9CD00F68F37 /* NELinkedScrollView.h */,
-				062A3E7119EBA9CD00F68F37 /* NELinkedScrollView.m */,
-				062A3E7219EBA9CD00F68F37 /* NELinkedScrollViewAnimator.h */,
-				062A3E7319EBA9CD00F68F37 /* NELinkedScrollViewAnimator.m */,
+				062A3E7E19EBC56A00F68F37 /* NELinkedScrollCell.h */,
+				062A3E7F19EBC56A00F68F37 /* NELinkedScrollCell.m */,
+				062A3E8019EBC56A00F68F37 /* NELinkedScrollView.h */,
+				062A3E8119EBC56A00F68F37 /* NELinkedScrollView.m */,
+				062A3E8219EBC56A00F68F37 /* NELinkedScrollViewAnimator.h */,
+				062A3E8319EBC56A00F68F37 /* NELinkedScrollViewAnimator.m */,
 			);
-			path = NELinkedScrollView;
+			name = NELinkedScrollView;
+			path = ../NELinkedScrollView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,12 +249,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				062A3E8419EBC56A00F68F37 /* NELinkedScrollCell.m in Sources */,
+				062A3E8519EBC56A00F68F37 /* NELinkedScrollView.m in Sources */,
+				062A3E8619EBC56A00F68F37 /* NELinkedScrollViewAnimator.m in Sources */,
 				062A3E4D19EBA6F000F68F37 /* AppDelegate.m in Sources */,
-				062A3E7419EBA9CD00F68F37 /* NELinkedScrollCell.m in Sources */,
 				062A3E4A19EBA6F000F68F37 /* main.m in Sources */,
 				062A3E7919EBA9F200F68F37 /* NEViewController.m in Sources */,
-				062A3E7519EBA9CD00F68F37 /* NELinkedScrollView.m in Sources */,
-				062A3E7619EBA9CD00F68F37 /* NELinkedScrollViewAnimator.m in Sources */,
 				062A3E7C19EBAF4900F68F37 /* NEDemoCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

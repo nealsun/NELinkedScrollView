@@ -23,8 +23,6 @@
     NSUInteger innerPageIndex;
     BOOL _isScrolling;
     BOOL _scrollingStarted;
-//    BOOL _deceleratingBackToZero;
-//    CGFloat _decelerationDistanceRatio;
 }
 
 - (void)dealloc {
@@ -40,8 +38,9 @@
 
         self.scrollView = scrollView;
         self.scrollView.contentSize = CGSizeMake(frame.size.width * 3, frame.size.height);
-        _scrollViewStartOffset = CGPointMake(frame.size.width, 0);
-        _scrollViewEndOffset = CGPointMake(frame.size.width, 0);
+        self.scrollViewStartOffset = CGPointMake(frame.size.width, 0);
+        
+        self.scrollViewEndOffset = CGPointMake(frame.size.width, 0);
 
     }
     return self;
@@ -161,7 +160,7 @@
         }
 
         if ([self.scrollingDelegate respondsToSelector:@selector(scrollingView:didChangePullOffset:)]) {
-            [self.scrollingDelegate scrollingView:self didChangePullOffset:pullOffset / PLUS_SCALE_RATIO];
+            [self.scrollingDelegate scrollingView:self didChangePullOffset:pullOffset];
         }
 
         scrollView.transform = CGAffineTransformMakeTranslation(pullOffset, 0);

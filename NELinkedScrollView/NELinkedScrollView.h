@@ -20,9 +20,6 @@
 //响应点击事件，处理由delegate负责，如翻页，全屏。
 - (void)linkedScrollView:(NELinkedScrollView *)linkedScrollView clickCell:(NELinkedScrollCell *)cell atLocation:(CGPoint)location;
 
-//reloadfinish
-//- (void)linkedScrollViewReloadFinished:(NELinkedScrollView *)linkedScrollView;
-
 //通知切换page
 - (void)linkedScrollView:(NELinkedScrollView *)linkedScrollView currentCell:(NELinkedScrollCell *)cell willTurnFromOffset:(CGPoint)fromOffset toOffset:(CGPoint)toOffset;
 - (void)linkedScrollView:(NELinkedScrollView *)linkedScrollView currentCellDidCancelTurnPage:(NELinkedScrollCell *)cell;
@@ -52,7 +49,7 @@
 - (BOOL)scrollToNextPageAnimated:(BOOL)animated;
 - (BOOL)scrollToPreviousPageAnimated:(BOOL)animated;
 
-- (void)currentCellScrollToOffset:(CGPoint)offset;
+- (void)currentCellScrollToOffset:(CGPoint)offset animated:(BOOL)animated;
 
 - (NELinkedScrollCell *)dequeueReusableCellWithIdentifier:(NSString *)identifier;
 
